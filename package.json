@@ -1,14 +1,26 @@
 {
   "name": "vue-cropper",
   "version": "0.1.0",
-  "private": true,
+  "description": "A cropper component for Vue.js based on cropperjs.",
+  "keywords": [
+    "cropper",
+    "vue",
+    "vue-cropper",
+    "cropperjs"
+  ],
+  "main": "src/main.js",
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:taoqi0813/vue-cropper.git"
+  },
   "dependencies": {
     "core-js": "^3.6.5",
+    "cropperjs": "^1.5.7",
     "vue": "^2.6.11"
   },
   "devDependencies": {
