@@ -10,20 +10,8 @@
 <script>
 import Cropper from 'cropperjs'
 export default {
-  name: 'VueCropper',
+  name: 'PeachCropper',
   props: {
-    cropW: {
-      type: String || Number,
-      default: '128'
-    },
-    cropH: {
-      type: String || Number,
-      default: '128'
-    },
-    round: {
-      type: Boolean,
-      default: false
-    },
     options: {
       type: Object,
       default: function(){
@@ -92,7 +80,7 @@ export default {
       context.drawImage(sourceCanvas, 0, 0, width, height)
       return canvas
     },
-    getCroppedCanvas() {
+    getDataURL() {
       let afterImg
       let cropW = parseInt(this.cropperOptions.cropW)
       let cropH = parseInt(this.cropperOptions.cropH)

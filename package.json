@@ -1,13 +1,14 @@
 {
-  "name": "vue-cropper",
+  "name": "peach-cropper",
   "version": "0.1.0",
-  "description": "A cropper component for Vue.js based on cropperjs.",
+  "description": "基于cropperjs封装的图片裁剪Vue组件，增加圆形裁剪功能，适用于PC和移动端。A cropper component for Vue.js based on cropperjs, add round crop function, available for PC & mobile.",
   "keywords": [
     "cropper",
     "vue",
     "vue-cropper",
     "cropperjs"
   ],
+  "license": "MIT",
   "main": "src/main.js",
   "scripts": {
     "dev": "vue-cli-service serve",
