@@ -54,6 +54,8 @@ Vue.use(PeachCropper)
   - 类型: String | Type: String
   - 图片base64编码 | base64 code of image
 
+#### 其他的方法详见cropperjs文档，https://github.com/fengyuanchen/cropperjs | More options see cropperjs documents, https://github.com/fengyuanchen/cropperjs
+
 
 ## 例子 | Example
 ```
@@ -62,3 +64,9 @@ const base64 = this.$refs.cropper.getDataURL()
 
 ## 注意 | Notice
 在组件外面放置容器，设置容器的宽高 | set a parent wrapper for this component to change size
+
+## 更新日志 | Log
+|  版本号   | 更新时间  | 更新内容  |
+|  ----  | ----  | ----  |
+| 0.2.0  | 2020/6/15 | 扩展支持cropperjs所有方法
+| 0.1.0  | 2020/6/8 | 封装getDataURL方法

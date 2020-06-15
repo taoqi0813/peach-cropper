@@ -1,6 +1,6 @@
 {
   "name": "peach-cropper",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "基于cropperjs封装的图片裁剪Vue组件，增加圆形裁剪功能，适用于PC和移动端。A cropper component for Vue.js based on cropperjs, add round crop function, available for PC & mobile.",
   "keywords": [
     "cropper",

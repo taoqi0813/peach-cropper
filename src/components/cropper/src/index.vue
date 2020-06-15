@@ -19,7 +19,7 @@ export default {
 
         }
       }
-    },
+    }
   },
   watch: {
     options: {
@@ -52,18 +52,99 @@ export default {
         this.cropper.destroy()
       }
       this.cropperOptions = {
-      ...this.cropperOptions,
-      ...this.options
-    }
-    if(this.cropperOptions.round){
-      let diameter = Math.min(this.cropperOptions.cropW, this.cropperOptions.cropH)
-      this.cropperOptions.cropW = diameter
-      this.cropperOptions.cropH = diameter
-    }
-    this.cropperOptions.aspectRatio = this.cropperOptions.cropW / this.cropperOptions.cropH
-    this.$nextTick(()=>{
-      this.cropper = new Cropper(this.$refs.cropper, this.cropperOptions)
-    })
+        ...this.cropperOptions,
+        ...this.options
+      }
+      if(this.cropperOptions.round){
+        let diameter = Math.min(this.cropperOptions.cropW, this.cropperOptions.cropH)
+        this.cropperOptions.cropW = diameter
+        this.cropperOptions.cropH = diameter
+      }
+      this.cropperOptions.aspectRatio = this.cropperOptions.cropW / this.cropperOptions.cropH
+      this.$nextTick(()=>{
+        this.cropper = new Cropper(this.$refs.cropper, this.cropperOptions)
+      })
+    },
+    crop(){
+      return this.cropper.crop()
+    },
+    reset(){
+      return this.cropper.reset()
+    },
+    clear(){
+      return this.cropper.clear()
+    },
+    replace(url,hasSameSize = false){
+      return this.cropper.replace(url,hasSameSize)
+    },
+    enable(){
+      return this.cropper.enable()
+    },
+    disable(){
+      return this.cropper.disable()
+    },
+    destroy(){
+      return this.cropper.destroy()
+    },
+    move(offsetX,offsetY = undefined){
+      return this.cropper.move(offsetX,offsetY)
+    },
+    moveTo(x,y = undefined){
+      return this.cropper.moveTo(x,y)
+    },
+    zoom(ratio){
+      return this.cropper.zoom(ratio)
+    },
+    zoomTo(ratio,pivot = {}){
+      return this.cropper.zoomTo(ratio,pivot)
+    },
+    rotate(degree){
+      return this.cropper.rotate(degree)
+    },
+    rotateTo(degree){
+      return this.cropper.rotateTo(degree)
+    },
+    scale(scaleX,scaleY = undefined){
+      return this.cropper.scale(scaleX,scaleY)
+    },
+    scaleX(scaleX){
+      return this.cropper.scaleX(scaleX)
+    },
+    scaleY(scaleY){
+      return this.cropper.scaleY(scaleY)
+    },
+    getData(rounded = false){
+      return this.cropper.getData(rounded)
+    },
+    setData(data){
+      return this.cropper.setData(data)
+    },
+    getContainerData(){
+      return this.cropper.getContainerData()
+    },
+    getImageData(){
+      return this.cropper.getImageData()
+    },
+    getCanvasData(){
+      return this.cropper.getCanvasData()
+    },
+    setCanvasData(data){
+      return this.cropper.setCanvasData(data)
+    },
+    getCropBoxData(){
+      return this.cropper.getCropBoxData()
+    },
+    setCropBoxData(data){
+      return this.cropper.setCropBoxData(data)
+    },
+    getCroppedCanvas(options = {}){
+      return this.cropper.getCroppedCanvas(options)
+    },
+    setAspectRatio(aspectRatio){
+      return this.cropper.setAspectRatio(aspectRatio)
+    },
+    setDragMode(mode = 'none'){
+      return this.cropper.setDragMode(mode)
     },
     getRoundedCanvas(sourceCanvas) {
       var canvas = document.createElement('canvas')
