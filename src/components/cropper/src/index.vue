@@ -1,5 +1,5 @@
 <template>
-  <div class="container" :class="{'round': options.round}">
+  <div class="peach-cropper-container" :class="{'round': options.round}">
     <img ref="cropper" :src="options.img" alt="加载失败">
     <slot name="footer">
 
@@ -190,7 +190,7 @@ export default {
 }
 </script>
 <style scoped>
-.container{
+.peach-cropper-container{
   position: relative;
   text-align: center;
   width: 100%;
@@ -198,7 +198,7 @@ export default {
 }
 </style>
 <style>
-.container.round .cropper-crop-box{
+.peach-cropper-container.round .cropper-crop-box{
   border-radius: 50%;
   overflow: hidden;
 }

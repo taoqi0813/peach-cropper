@@ -2,6 +2,9 @@
 > 基于cropperjs封装的图片裁剪Vue组件，增加圆形裁剪功能，适用于PC和移动端。<br>
 > A cropper component for Vue.js based on cropperjs, add round crop function, available for PC & mobile.
 
+## 在线预览 | Preview demo
+https://taoqi0813.github.io/#/peach-cropper
+
 ## 快速上手 | Getting started
 ### 安装 | Installation
 ```
@@ -68,5 +71,6 @@ const base64 = this.$refs.cropper.getDataURL()
 ## 更新日志 | Log
 |  版本号   | 更新时间  | 更新内容  |
 |  ----  | ----  | ----  |
+| 0.2.1  | 2020/6/22 | 修改class命名，添加在线预览地址
 | 0.2.0  | 2020/6/15 | 扩展支持cropperjs所有方法
 | 0.1.0  | 2020/6/8 | 封装getDataURL方法
