@@ -2,6 +2,7 @@
 node_modules
 /dist
 /public
+/demo/node_modules
 .gitreview
 
 # local env files
